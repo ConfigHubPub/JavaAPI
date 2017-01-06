@@ -7,7 +7,6 @@ ConfigHub Java Client API
 ```java
 import com.confighub.client.*;
 
-
 public class PullTest
 {
     public static void main(String... args)
@@ -34,11 +33,9 @@ public class PullTest
 }
 ```
 
-
 ## Configuration Push Example
 ```java
 import com.confighub.client.*;
-
 
 public class PushTest
 {
@@ -60,5 +57,4 @@ public class PushTest
         PushResponse response = configHub.pushQueue.flush();
     }
 }
-
 ```

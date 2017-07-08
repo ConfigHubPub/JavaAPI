@@ -1,7 +1,7 @@
 # JavaAPI
 ConfigHub Java Client API
 
-[JavaDoc] (http://localhost:8080/api/docs/Java/v1.3.0/index.html?com/confighub/client/ConfigHub.html)
+[JavaDoc](https://www.confighub.com/api/docs/Java/v1.3.0/index.html?com/confighub/client/ConfigHub.html)
 
 ## Configuration Pull Example:
 ```java

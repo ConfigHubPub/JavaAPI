@@ -2,6 +2,7 @@ package com.confighub.client;
 
 import com.confighub.client.error.ConfigHubException;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -107,7 +108,8 @@ public class Files
             while (itt.hasNext())
             {
                 Map.Entry<String, JsonElement> entry = itt.next();
-                files.put(entry.getKey(), entry.getValue().getAsString());
+                JsonObject aFileJson = entry.getValue().getAsJsonObject();
+                files.put(entry.getKey(), aFileJson.get("content").getAsString());
             }
         }
         catch (Exception pe)
